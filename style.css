@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    font-family: "DM sans", sans-serif;
+    background-color: hsl(30, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.main-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: hsl(30, 100%, 98%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 25px;
+    grid-template-areas: 
+    'create-post social-media social-media schedule-graph'
+    'create-post social-media social-media schedule-graph'
+    'create-post social-media social-media schedule-graph'
+    'create-post social-media social-media schedule-graph'
+    'create-post manage-platforms consistent-posting-schedule schedule-graph'
+    'ai-content manage-platforms consistent-posting-schedule schedule-graph'
+    'ai-content manage-platforms consistent-posting-schedule schedule-graph'
+    'ai-content percentage grow-followers grow-followers'
+    'ai-content percentage grow-followers grow-followers'
+    'ai-content percentage grow-followers grow-followers';
+}
+
+.grid-box {
+    border-radius: 20px;
+}
+
+.create-post {
+    background-color: hsl(31, 66%, 93%);
+    grid-area: create-post;
+    padding: 25px;
+    padding-top: 70px;
+}
+
+.create-post-paragraph {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -3.5px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.quicker-span {
+    font-style: italic;
+    color: hsl(256, 67%, 59%);
+}
+
+.create-post-image-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.create-post-image {
+    width: 100%;
+}
+
+.social-media {
+    background-color: hsl(256, 67%, 59%);
+    grid-area: social-media;
+    padding: 70px;
+}
+
+.social-media-paragraph {
+    color: white;
+    font-size: 46px;
+    letter-spacing: -2px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.ten-time-span {
+    color: hsl(39, 100%, 71%);
+}
+
+.faster-span {
+    font-style: italic;
+}
+
+.stars-image-wrapper {
+    width: 150px;
+    margin: auto;
+}
+
+.stars-image {
+    width: 100%;
+}
+
+.star-reviews-paragraph {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: hsl(256, 65%, 85%);
+}
+
+.schedule-graph {
+    background-color: hsl(254, 88%, 90%);
+    grid-area: schedule-graph;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.schedule-to-social-media-paragraph {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -2.8px;
+    line-height: 28px;
+}
+
+.social-media-graph-wrapper {
+    width: 300px;
+    position: absolute;
+    top: 130px;
+}
+
+.graph-image {
+    width: 100%;
+}
+
+.optimize-post-paragraph {
+    margin-top: 310px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.ai-content {
+    background-color: hsl(39, 100%, 71%);
+    grid-area: ai-content;
+    padding: 25px;
+}
+
+.ai-content-paragraph {
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: -2.8px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.ai-content-image-wrapper {
+    width: calc(100% + 15px);
+}
+
+.ai-content-image {
+    width: 100%;
+}
+
+.manage-platforms {
+    background-color: white;
+    grid-area: manage-platforms;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.manage-platforms-image-wrapper {
+    width: calc(100% + 98px);
+    margin-bottom: 30px;
+}
+.manage-platforms-image {
+    width: 100%;
+}
+
+.manage-platforms-paragraph,
+.consistent-posting-schedule-paragraph {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -2.8px;
+    line-height: 26px;
+}
+
+.consistent-posting-schedule {
+    
+    grid-area: consistent-posting-schedule;
+    padding: 25px;
+    background: url("/assets/images/illustration-consistent-schedule.webp");
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-color: hsl(39, 100%, 71%);
+    background-position: 25px 150px;
+}
+
+.percentage {
+    background-color: white;
+    grid-area: percentage;
+    padding: 25px;
+}
+
+.percentage-span {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.percentage-description {
+    margin-bottom: 20px;
+}
+
+.percentage-image-wrapper {
+    width: 100%;
+}
+
+.percentage-image {
+    width: 100%;
+}
+
+.grow-followers {
+    background-color: hsl(256, 67%, 59%);
+    grid-area: grow-followers;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.grow-follovers-image-wrapper {
+    height: 170px;
+}
+
+.grow-followers-image {
+    height: 100%;
+}
+
+.grow-followers-paragraph {
+    color: white;
+    font-size: 32px;
+    line-height: 31px;
+    letter-spacing: -1px;
+    margin-left: 15px;
+}
+
+/* ---------------Media queries - Mobile design------------- */
+
+@media only screen and (max-width: 1000px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+        padding: 10px;
+    }
+    
+    .grid-box {
+        max-width: 400px;
+    }
+
+    .social-media {
+        order: 1;
+        padding: 30px;
+    }
+
+    .social-media-paragraph {
+        max-width: 250px;
+        min-width: 200px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .stars-image-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .manage-platforms {
+        order: 2;
+    }
+
+    .consistent-posting-schedule {
+        order: 3;
+        height: 220px;
+        background-position: 25px 90px;
+        background-size: 250px;
+    }
+
+    .schedule-graph {
+        order: 4;
+        text-align: center;
+    }
+
+    .social-media-graph-wrapper {
+        position: relative;
+        width: 100%;
+        top: 20px
+    }
+
+    .optimize-post-paragraph {
+        margin-top: 40px;
+    }
+
+    .grow-followers {
+        order: 5;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grow-follovers-image-wrapper {
+        height: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .percentage {
+        order: 6;
+    }
+
+    .percentage-image-wrapper {
+        width: 50%;
+    }
+
+    .create-post {
+        order: 7;
+        padding-top: 30px;
+    }
+
+    .create-post-image-wrapper {
+        margin-bottom: 0;
+    }
+
+    .ai-content {
+        order: 8;
+    }
+
+    .ai-content-paragraph {
+        margin-bottom: 20px;
+    }
+
+    .ai-content-image-wrapper {
+        width: 60%;
+    }
+    
+}
